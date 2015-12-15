@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import ini from 'packagesmith.formats.ini';
 import defaultsDeep from 'lodash.defaultsdeep';
 import { runProvisionerSet } from 'packagesmith';
