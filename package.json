@@ -41,7 +41,7 @@
     "parser": "babel-eslint"
   },
   "dependencies": {
-    "lodash.defaultsdeep": "^3.10.0",
+    "lodash.defaultsdeep": "^4.0.0",
     "packagesmith": "^1.0.0",
     "packagesmith.formats.ini": "^1.0.0"
   },
