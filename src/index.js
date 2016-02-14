@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import ini from 'packagesmith.formats.ini';
 import defaultsDeep from 'lodash.defaultsdeep';
+import ini from 'packagesmith.formats.ini';
 import { runProvisionerSet } from 'packagesmith';
 const defaultConfig = {
   root: 'true',
@@ -26,5 +26,6 @@ export function editorConfigFile(config) {
 export default editorConfigFile;
 
 if (require.main === module) {
-  runProvisionerSet(process.argv[2] || '.', editorConfigFile());
+  const directoryArgPosition = 2;
+  runProvisionerSet(process.argv[directoryArgPosition] || '.', editorConfigFile());
 }
